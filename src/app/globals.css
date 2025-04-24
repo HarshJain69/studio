@@ -9,46 +9,47 @@ body {
 
 @layer base {
   :root {
-    --background: 33 33 33; /* Dark charcoal gray */
-    --foreground: 240 240 240; /* Off-white */
-    --card: 33 33 33;
-    --card-foreground: 240 240 240;
-    --popover: 33 33 33;
-    --popover-foreground: 240 240 240;
-    --primary: 0 128 128; /* Teal */
-    --primary-foreground: 240 240 240;
-    --secondary: 51 51 54;
-    --secondary-foreground: 240 240 240;
-    --muted: 63 63 70;
-    --muted-foreground: 156 163 175;
-    --accent: 0 128 128; /* Teal */
-    --accent-foreground: 240 240 240;
-    --destructive: 220 53 69;
-    --destructive-foreground: 240 240 240;
-    --border: 63 63 70;
-    --input: 39 39 42;
-    --ring: 0 128 128; /* Teal */
-  }
-
-  .light {
-    --background: 240 240 240; /* Off-white */
-    --foreground: 33 33 33; /* Dark charcoal gray */
-    --card: 240 240 240;
-    --card-foreground: 33 33 33;
-    --popover: 240 240 240;
-    --primary: 0 128 128; /* Teal */
-    --primary-foreground: 33 33 33;
-    --secondary: 229 231 235;
-    --secondary-foreground: 33 33 33;
+    --background: 255 255 255; /* Off-white */
+    --foreground: 0 0 0; /* Black */
+    --card: 255 255 255;
+    --card-foreground: 0 0 0;
+    --popover: 255 255 255;
+    --popover-foreground: 0 0 0;
+    --primary: 94 77 244; /* Purple */
+    --primary-foreground: 255 255 255;
+    --secondary: 243 244 246;
+    --secondary-foreground: 0 0 0;
     --muted: 243 244 246;
     --muted-foreground: 107 114 128;
-    --accent: 0 128 128; /* Teal */
-    --accent-foreground: 33 33 33;
+    --accent: 229 231 235;
+    --accent-foreground: 0 0 0;
     --destructive: 220 53 69;
-    --destructive-foreground: 240 240 240;
+    --destructive-foreground: 255 255 255;
     --border: 229 231 235;
     --input: 209 213 219;
-    --ring: 0 128 128; /* Teal */
+    --ring: 94 77 244; /* Purple */
+  }
+
+  .dark {
+    --background: 17 17 17; /* Dark charcoal gray */
+    --foreground: 255 255 255; /* Off-white */
+    --card: 31 31 31;
+    --card-foreground: 255 255 255;
+    --popover: 31 31 31;
+    --popover-foreground: 255 255 255;
+    --primary: 94 77 244; /* Purple */
+    --primary-foreground: 255 255 255;
+    --secondary: 55 55 55;
+    --secondary-foreground: 255 255 255;
+    --muted: 55 55 55;
+    --muted-foreground: 156 163 175;
+    --accent: 55 55 55;
+    --accent-foreground: 255 255 255;
+    --destructive: 220 53 69;
+    --destructive-foreground: 255 255 255;
+    --border: 63 63 70;
+    --input: 39 39 42;
+    --ring: 94 77 244; /* Purple */
   }
 }
 
@@ -120,3 +121,4 @@ html {
   opacity: 0;
   transition: opacity 300ms;
 }
+
