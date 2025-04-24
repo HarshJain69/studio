@@ -42,13 +42,13 @@ export const Skills = () => {
             </p>
             <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                 {skillsData.map((skill, index) => (
-                    <Card key={index}>
+                    <Card key={index} className="bg-card shadow-lg">
                         <CardHeader>
-                            <CardTitle>{skill.name}</CardTitle>
+                            <CardTitle className="text-xl text-foreground">{skill.name}</CardTitle>
                         </CardHeader>
                         <CardContent>
                             <Progress value={skill.level} />
-                            <CardDescription className="mt-2 text-right">
+                            <CardDescription className="mt-2 text-right text-muted-foreground">
                                 {skill.level}%
                             </CardDescription>
                         </CardContent>
@@ -58,4 +58,3 @@ export const Skills = () => {
         </motion.section>
     );
 };
-

@@ -34,21 +34,21 @@ export const Contact = () => {
             <p className="mt-4 text-muted-foreground">
                 Feel free to reach out!
             </p>
-            <Card className="mt-8">
+            <Card className="mt-8 bg-card shadow-lg">
                 <CardHeader>
-                    <CardTitle>Send a Message</CardTitle>
+                    <CardTitle className="text-xl text-foreground">Send a Message</CardTitle>
                 </CardHeader>
                 <CardContent className="grid gap-4">
                     <div className="grid gap-2">
-                        <label htmlFor="name" className="text-sm font-medium leading-none">Name</label>
+                        <label htmlFor="name" className="text-sm font-medium leading-none text-foreground">Name</label>
                         <Input type="text" id="name" placeholder="Your Name" />
                     </div>
                     <div className="grid gap-2">
-                        <label htmlFor="email" className="text-sm font-medium leading-none">Email</label>
+                        <label htmlFor="email" className="text-sm font-medium leading-none text-foreground">Email</label>
                         <Input type="email" id="email" placeholder="Your Email" />
                     </div>
                     <div className="grid gap-2">
-                        <label htmlFor="message" className="text-sm font-medium leading-none">Message</label>
+                        <label htmlFor="message" className="text-sm font-medium leading-none text-foreground">Message</label>
                         <Textarea id="message" placeholder="Your Message" rows={4} />
                     </div>
                     <Button>Send Message</Button>
@@ -57,4 +57,3 @@ export const Contact = () => {
         </motion.section>
     );
 };
-

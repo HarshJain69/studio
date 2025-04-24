@@ -43,4 +43,3 @@ export const Hero = () => {
         </motion.section>
     );
 };
-

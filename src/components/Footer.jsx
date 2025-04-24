@@ -31,13 +31,13 @@ const Footer = () => {
                 &copy; {new Date().getFullYear()} DevFolio X. All rights reserved.
                 <div className="mt-2">
                     {/* Add social links here */}
-                    <a href="#" className="mx-2 hover:text-primary transition-colors">
+                    <a href="#" className="mx-2 hover:text-accent transition-colors">
                         LinkedIn
                     </a>
-                    <a href="#" className="mx-2 hover:text-primary transition-colors">
+                    <a href="#" className="mx-2 hover:text-accent transition-colors">
                         GitHub
                     </a>
-                    <a href="#" className="mx-2 hover:text-primary transition-colors">
+                    <a href="#" className="mx-2 hover:text-accent transition-colors">
                         Twitter
                     </a>
                 </div>
@@ -47,4 +47,3 @@ const Footer = () => {
 };
 
 export default Footer;
-

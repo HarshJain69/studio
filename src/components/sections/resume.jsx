@@ -31,12 +31,12 @@ export const Resume = () => {
             <p className="mt-4 text-muted-foreground">
                 A quick look at my experience and qualifications.
             </p>
-            <Card className="mt-8">
+            <Card className="mt-8 bg-card shadow-lg">
                 <CardHeader>
-                    <CardTitle>Experience</CardTitle>
+                    <CardTitle className="text-xl text-foreground">Experience</CardTitle>
                 </CardHeader>
                 <CardContent>
-                    <CardDescription>
+                    <CardDescription className="text-muted-foreground">
                         Detailed information about my work history.
                     </CardDescription>
                 </CardContent>
@@ -44,4 +44,3 @@ export const Resume = () => {
         </motion.section>
     );
 };
-

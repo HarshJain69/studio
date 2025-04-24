@@ -24,7 +24,7 @@ const Header = () => {
 
     return (
         <motion.header
-            className="bg-background border-b border-border py-4 sticky top-0 z-50"
+            className="bg-background border-b border-border py-4 sticky top-0 z-50 shadow-md"
             variants={fadeInAnimationVariants}
             initial="initial"
             animate="animate"
@@ -36,32 +36,32 @@ const Header = () => {
                 <nav>
                     <ul className="flex space-x-6">
                         <li>
-                            <Link href="#skills" className="hover:text-primary transition-colors">
+                            <Link href="#skills" className="hover:text-accent transition-colors">
                                 Skills
                             </Link>
                         </li>
                         <li>
-                            <Link href="#projects" className="hover:text-primary transition-colors">
+                            <Link href="#projects" className="hover:text-accent transition-colors">
                                 Projects
                             </Link>
                         </li>
                         <li>
-                            <Link href="#achievements" className="hover:text-primary transition-colors">
+                            <Link href="#achievements" className="hover:text-accent transition-colors">
                                 Achievements
                             </Link>
                         </li>
                         <li>
-                            <Link href="#resume" className="hover:text-primary transition-colors">
+                            <Link href="#resume" className="hover:text-accent transition-colors">
                                 Resume
                             </Link>
                         </li>
                          <li>
-                            <Link href="#contact" className="hover:text-primary transition-colors">
+                            <Link href="#contact" className="hover:text-accent transition-colors">
                                 Contact
                             </Link>
                         </li>
                         <li>
-                            <Button>Contact</Button>
+                            <Button variant="outline">Contact</Button>
                         </li>
                     </ul>
                 </nav>
@@ -71,4 +71,3 @@ const Header = () => {
 };
 
 export default Header;
-

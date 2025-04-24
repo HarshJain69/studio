@@ -51,9 +51,9 @@ export const Projects = () => {
             </p>
             <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                 {projectsData.map((project, index) => (
-                    <Card key={index}>
+                    <Card key={index} className="bg-card shadow-lg">
                         <CardHeader>
-                            <CardTitle>{project.title}</CardTitle>
+                            <CardTitle className="text-xl text-foreground">{project.title}</CardTitle>
                         </CardHeader>
                         <CardContent>
                             <img
@@ -61,7 +61,7 @@ export const Projects = () => {
                                 alt={project.title}
                                 className="aspect-video rounded-md object-cover"
                             />
-                            <CardDescription className="mt-2">
+                            <CardDescription className="mt-2 text-muted-foreground">
                                 {project.description}
                             </CardDescription>
                         </CardContent>
@@ -71,4 +71,3 @@ export const Projects = () => {
         </motion.section>
     );
 };
-

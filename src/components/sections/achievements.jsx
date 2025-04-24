@@ -48,12 +48,12 @@ export const Achievements = () => {
             </p>
             <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                 {achievementsData.map((achievement, index) => (
-                    <Card key={index}>
+                    <Card key={index} className="bg-card shadow-lg">
                         <CardHeader>
-                            <CardTitle>{achievement.title}</CardTitle>
+                            <CardTitle className="text-xl text-foreground">{achievement.title}</CardTitle>
                         </CardHeader>
                         <CardContent>
-                            <CardDescription>{achievement.description}</CardDescription>
+                            <CardDescription className="text-muted-foreground">{achievement.description}</CardDescription>
                         </CardContent>
                     </Card>
                 ))}
@@ -61,4 +61,3 @@ export const Achievements = () => {
         </motion.section>
     );
 };
-

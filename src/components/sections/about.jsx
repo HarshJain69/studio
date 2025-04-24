@@ -32,10 +32,10 @@ export const AboutMe = () => {
             <p className="mt-4 text-muted-foreground">
                 A brief introduction about myself.
             </p>
-            <Card className="mt-8">
+            <Card className="mt-8 bg-card shadow-lg">
                 <CardHeader>
-                    <CardTitle>John Doe</CardTitle>
-                    <CardDescription>Web Developer, AI/ML Enthusiast, Android Developer</CardDescription>
+                    <CardTitle className="text-2xl font-semibold text-foreground">John Doe</CardTitle>
+                    <CardDescription className="text-md text-muted-foreground">Web Developer, AI/ML Enthusiast, Android Developer</CardDescription>
                 </CardHeader>
                 <CardContent>
                     <div className="flex items-center space-x-4">
@@ -44,7 +44,7 @@ export const AboutMe = () => {
                             <AvatarFallback>JD</AvatarFallback>
                         </Avatar>
                         <div>
-                            <CardDescription>
+                            <CardDescription className="text-sm text-muted-foreground">
                                 I am a passionate web developer with expertise in modern web technologies, AI/ML, and Android development. I love building innovative solutions to complex problems.
                             </CardDescription>
                         </div>
@@ -54,4 +54,3 @@ export const AboutMe = () => {
         </motion.section>
     );
 };
-
