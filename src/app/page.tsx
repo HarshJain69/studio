@@ -1,4 +1,3 @@
-
 "use client";
 
 import React from 'react';
@@ -8,6 +7,13 @@ import { Projects } from "@/components/sections/projects";
 import { Achievements } from "@/components/sections/achievements";
 import { Resume } from "@/components/sections/resume";
 import { Hero } from "@/components/sections/hero";
+import type {Metadata} from 'next';
+
+export const metadata: Metadata = {
+  title: 'DevFolio X',
+  description: 'A modern portfolio website for a web developer',
+};
+
 
 const fadeInAnimationVariants = {
   initial: {
