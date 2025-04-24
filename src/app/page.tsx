@@ -7,6 +7,7 @@ import { Projects } from "@/components/sections/projects";
 import { Achievements } from "@/components/sections/achievements";
 import { Resume } from "@/components/sections/resume";
 import { Hero } from "@/components/sections/hero";
+import { AboutMe } from "@/components/sections/about";
 
 
 const fadeInAnimationVariants = {
@@ -33,6 +34,7 @@ export default function Home() {
       animate="animate"
     >
       <Hero />
+      <AboutMe />
       <Skills />
       <Projects />
       <Achievements />
