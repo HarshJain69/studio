@@ -2,12 +2,14 @@
 
 'use client';
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarImage } from "@/components/ui/avatar";
 import { Github, Linkedin, Twitter } from 'lucide-react'; // Import social icons
+import { Sun, Moon } from 'lucide-react';
+
 
 const Header = () => {
     const fadeInAnimationVariants = {
@@ -23,6 +25,28 @@ const Header = () => {
                 ease: "easeInOut",
             },
         },
+    };
+
+    const [theme, setTheme] = useState(() => {
+        if (typeof localStorage !== 'undefined') {
+            return localStorage.getItem('theme') === 'dark' ? 'dark' : 'light';
+        }
+        return 'light';
+    });
+
+    useEffect(() => {
+        if (typeof document !== 'undefined') {
+            if (theme === 'dark') {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+            localStorage.setItem('theme', theme);
+        }
+    }, [theme]);
+
+    const toggleTheme = () => {
+        setTheme(theme === 'dark' ? 'light' : 'dark');
     };
 
     return (
@@ -66,6 +90,11 @@ const Header = () => {
                          <li>
                             <Button variant="outline">Resume</Button>
                         </li>
+                        <li>
+                            <Button onClick={toggleTheme} variant="ghost" size="icon">
+                                {theme === 'dark' ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
+                            </Button>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -85,5 +114,4 @@ const Header = () => {
 };
 
 export default Header;
-
 
