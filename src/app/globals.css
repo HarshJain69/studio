@@ -36,7 +36,6 @@ body {
     --card: 255 255 255;
     --card-foreground: 0 0 0;
     --popover: 255 255 255;
-    --popover-foreground: 0 0 0;
     --primary: 48 127 227;
     --primary-foreground: 255 255 255;
     --secondary: 229 231 235;
@@ -77,4 +76,5 @@ body {
     opacity: 1;
   }
 }
+
 

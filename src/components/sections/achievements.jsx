@@ -1,3 +1,4 @@
+
 "use client";
 
 import React from 'react';
@@ -60,3 +61,4 @@ export const Achievements = () => {
         </motion.section>
     );
 };
+
