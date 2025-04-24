@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -87,7 +88,11 @@ export default {
   		animation: {
   			'accordion-down': 'accordion-down 0.2s ease-out',
   			'accordion-up': 'accordion-up 0.2s ease-out'
-  		}
+  		},
+          backgroundImage: {
+              'grid-pattern':
+                  'url("data:image/svg+xml,%3Csvg width=\'42\' height=\'44\' viewBox=\'0 0 42 44\' fill=\'none\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath d=\'M0 0H42V44H0V0Z\' fill=\'white\'/%3E%3Cg opacity=\'0.08\'%3E%3Cpath d=\'M1.47656 4.29318L40.4766 4.29318\' stroke=\'%23333333\' strokeWidth=\'0.75\' strokeLinecap=\'round\' strokeLinejoin=\'round\'/%3E%3Cpath d=\'M1.47656 15.4119L40.4766 15.4119\' stroke=\'%23333333\' strokeWidth=\'0.75\' strokeLinecap=\'round\' strokeLinejoin=\'round\'/%3E%3Cpath d=\'M1.47656 26.5306L40.4766 26.5306\' stroke=\'%23333333\' strokeWidth=\'0.75\' strokeLinecap=\'round\' strokeLinejoin=\'round\'/%3E%3Cpath d=\'M1.47656 37.6494L40.4766 37.6494\' stroke=\'%23333333\' strokeWidth=\'0.75\' strokeLinecap=\'round\' strokeLinejoin=\'round\'/%3E%3Cpath d=\'M4.90625 1.2998L4.90625 41.9497\' stroke=\'%23333333\' strokeWidth=\'0.75\' strokeLinecap=\'round\' strokeLinejoin=\'round\'/%3E%3Cpath d=\'M15.7373 1.2998L15.7373 41.9497\' stroke=\'%23333333\' strokeWidth=\'0.75\' strokeLinecap=\'round\' strokeLinejoin=\'round\'/%3E%3Cpath d=\'M26.5684 1.2998L26.5684 41.9497\' stroke=\'%23333333\' strokeWidth=\'0.75\' strokeLinecap=\'round\' strokeLinejoin=\'round\'/%3E%3Cpath d=\'M37.3994 1.2998L37.3994 41.9497\' stroke=\'%23333333\' strokeWidth=\'0.75\' strokeLinecap=\'round\' strokeLinejoin=\'round\'/%3E%3C/g%3E%3C/svg%3E")',
+          },
   	}
   },
   plugins: [require("tailwindcss-animate")],
